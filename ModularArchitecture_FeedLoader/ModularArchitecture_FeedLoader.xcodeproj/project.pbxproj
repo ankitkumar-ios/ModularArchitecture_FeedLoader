@@ -18,6 +18,7 @@
 		BC0F74C52666015D005EEDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F74C32666015D005EEDE5 /* LaunchScreen.storyboard */; };
 		BC0F74D02666015D005EEDE5 /* ModularArchitecture_FeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F74CF2666015D005EEDE5 /* ModularArchitecture_FeedLoaderTests.swift */; };
 		BC0F74DB2666015D005EEDE5 /* ModularArchitecture_FeedLoaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F74DA2666015D005EEDE5 /* ModularArchitecture_FeedLoaderUITests.swift */; };
+		BC8CB75326687AD60032EDA1 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8CB75226687AD60032EDA1 /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BC0F74D62666015D005EEDE5 /* ModularArchitecture_FeedLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularArchitecture_FeedLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0F74DA2666015D005EEDE5 /* ModularArchitecture_FeedLoaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularArchitecture_FeedLoaderUITests.swift; sourceTree = "<group>"; };
 		BC0F74DC2666015D005EEDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8CB75226687AD60032EDA1 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				BC0F74B826660159005EEDE5 /* AppDelegate.swift */,
 				BC0F74BA26660159005EEDE5 /* SceneDelegate.swift */,
 				BC0F74BC26660159005EEDE5 /* ViewController.swift */,
+				BC8CB75126687ABC0032EDA1 /* FeedApi */,
 				BC0505BB2667E2A900A80FCB /* FeedFeature */,
 				BC0F74BE26660159005EEDE5 /* Main.storyboard */,
 				BC0F74C12666015D005EEDE5 /* Assets.xcassets */,
@@ -143,6 +146,14 @@
 				BC0F74DC2666015D005EEDE5 /* Info.plist */,
 			);
 			path = ModularArchitecture_FeedLoaderUITests;
+			sourceTree = "<group>";
+		};
+		BC8CB75126687ABC0032EDA1 /* FeedApi */ = {
+			isa = PBXGroup;
+			children = (
+				BC8CB75226687AD60032EDA1 /* RemoteFeedLoader.swift */,
+			);
+			path = FeedApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				BC0F74BD26660159005EEDE5 /* ViewController.swift in Sources */,
 				BC0F74B926660159005EEDE5 /* AppDelegate.swift in Sources */,
 				BC0505BE2667E2E400A80FCB /* FeedItem.swift in Sources */,
+				BC8CB75326687AD60032EDA1 /* RemoteFeedLoader.swift in Sources */,
 				BC0F74BB26660159005EEDE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
