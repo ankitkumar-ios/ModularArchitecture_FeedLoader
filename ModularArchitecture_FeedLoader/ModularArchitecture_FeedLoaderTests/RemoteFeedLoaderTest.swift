@@ -40,13 +40,11 @@ class RemoteFeedLoaderTest: XCTestCase {
 		let (sut, client) = makeSUT()
 		client.error = NSError.init(domain: "Test", code: 0, userInfo: nil)
 		
-		var capturedError: RemoteFeedLoader.Error?
+		var capturedErrors = [RemoteFeedLoader.Error]()
 		
-		sut.load { error in
-			capturedError = error
-		}
+		sut.load {capturedErrors.append($0)}
 		
-		XCTAssertEqual(capturedError, .connectivityError)
+		XCTAssertEqual(capturedErrors, [.connectivityError])
 	}
 	
 	//MARK: - Helper
